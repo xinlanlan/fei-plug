@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			.box{
+				height: 2000px;
+			}
+		</style>
+		<!--<script src="../js/aui-scroll.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/fei-scroll.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="box">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var scroll = new feiScroll({
+			listenTap: true,
+			distance: 0
+		},function(ret){
+			console.log(ret)
+		})
+	</script>
+</html>

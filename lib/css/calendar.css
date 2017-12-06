@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*html,body{
+	width: 100%;
+	height: 100%;
+	/*overflow: hidden;
+}*/
+.fei-calendar{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: -100%;
+	color: #666;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	/*transform: translateX(100%);
+	-webkit-transform: translateX(100%);*/
+}
+.fei-calendar-active{
+	top: 0;
+	/*transform: translateX(0);
+	-webkit-transform: translateX(0);*/
+}
+/*.calendar-top{
+	width: 100%;
+	left: 0;
+	top: 0;
+}*/
+.fei-header{
+	position: relative;
+	height: 42px;
+	line-height: 42px;
+	font-size: 17px;
+	background-color: #59c6c1;
+	color: #fff;
+	text-align: center;
+}
+.fei-back{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 18px;
+	top: 14px;
+	border: 2px solid #fff;
+	border-right: none;
+	border-top: none;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+.week-bar{
+	display: flex;
+	display: -webkit-flex;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 9px;
+	font-size: 15px;
+	background-color: #f4f4f4;
+}
+.week-bar span{
+	flex: 1;
+	-webkit-flex: 1;
+	text-align: center;
+}
+.calendar-body{
+	background-color: #fff;
+	position: absolute;
+	width: 100%;
+	top: 78px;
+	bottom: 0;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.body-item{
+	padding: 0 9px;
+	border-bottom: 1px solid #ebebeb;
+}
+.body-item-header{
+	height: 36px;
+	line-height: 36px;
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+}
+.calendar-table{
+	padding-bottom: 6px;
+}
+.table-line{
+	display: flex;
+	display: -webkit-flex;
+	line-height: 50px;
+}
+.table-line span{
+	flex: 1;
+	-webkit-flex: 1;
+	text-align: center;
+}
+.currentDay{
+	color: red;
+}
+/*选择时间时*/
+.fei-calendar .fei-start-time,.fei-calendar .fei-end-time{
+	background-color: #59c6c1 !important;
+	color: #fff;
+}
+.fei-calendar .fei-start-time{
+	border-bottom-left-radius: 0.4rem;
+	border-top-left-radius: 0.4rem;
+}
+.fei-calendar .fei-end-time{
+	border-bottom-right-radius: 0.4rem;
+	border-top-right-radius: 0.4rem;
+}
+.fei-calendar .fei-between-time{
+	background-color: #a9f3dd;
+}
+
+
+
+
+
+

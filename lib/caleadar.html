@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/calendar.css"/>
+		<script src="js/fei-calendar.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<button class="btn" id="btn">点击</button>
+		<button class="btn">点击</button>
+		<p>输出结果再控制台</p>
+	</body>
+	<script type="text/javascript">
+		var btn = document.querySelectorAll('.btn');
+		var feiCalendar = new feiCalendar(btn);
+		feiCalendar.setOption({
+			setStartTime: new Date('2017/05'),
+			setEndTime: new Date('2017/12'),
+			timeOutHide: 500
+		},function(ret){
+			console.log(ret);
+		});
+		//console.log(new Date(new Date().setHours(0,0,0,0)))
+	</script>
+</html>
