@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.item {
+				width: 100%;
+				height: 450px;
+				margin-bottom: 0.54rem;
+			}
+			
+			.item img {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="list">
+			<li class="item">
+				<img data-original="img/001.png" />
+			</li>
+			<li class="item">
+				<img data-original="img/002.png" />
+			</li>
+			<li class="item">
+				<img data-original="img/003.png" />
+			</li>
+			<li class="item">
+				<img data-original="img/004.png" />
+			</li>
+			<li class="item">
+				<img data-original="img/005.png" />
+			</li>
+			<li class="item">
+				<img data-original="img/006.png" />
+			</li>
+			<li class="item">
+				<img data-original="img/007.png" />
+			</li>
+			<li class="item">
+				<img data-original="img/008.png" />
+			</li>
+		</ul>
+	</body>
+	<script src="fei-lazyload.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var ele = document.querySelectorAll('.item img');
+		var lazyPic = new lazyLoadPic({
+			elements: ele
+		}, function(ret) {
+			console.log(ret);
+		});
+	</script>
+
+</html>

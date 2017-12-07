@@ -1,3 +1,7 @@
+/*
+ * fei-scroll.js
+ * @author fiveStarsAndMoon
+ */
 (function(window) {
 	'use strict';
 	var dateObj = (function() {
@@ -179,13 +183,14 @@
 									calendarBox.classList.remove('end');
 									sEle.classList.remove('fei-start-time');
 									document.querySelector('.fei-end-time').classList.remove('fei-end-time');
+									document.querySelector('.fei-calendar').classList.remove('fei-calendar-active');
 									var ele =  document.querySelectorAll('.fei-between-time'),len = ele.length;
 									for(var i=0;i<len;i++){
 										ele[i].classList.remove('fei-between-time');
 									};
 									callback({
-										feiStartTime: sTime,
-										feiEndTime: eTime
+										feiStartTime: Number(sTime),
+										feiEndTime: Number(eTime)
 									});
 								}, self.params.timeOutHide);
 							};
